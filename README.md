@@ -1,3 +1,37 @@
+Product Management Application
+Description
+This project is a robust product management application built using React, Ant Design, and TypeScript/Javascript. It provides a user-friendly interface for managing products, including features for viewing, adding, editing, and deleting products.
+
+Folder/File Structure
+The project follows a typical React project structure:
+
+php
+Copy code
+project-root/
+│
+├── public/               # Public assets and index.html
+│
+├── src/                  # Source code
+│   ├── components/       # React components
+│   ├── context/            # Application pages
+│   └── App.js            # Application entry point
+│
+├── package.json          # Project dependencies and scripts
+└── README.md             # Project documentation
+Libraries Used
+React: JavaScript library for building user interfaces.
+Ant Design: UI library with a set of high-quality React components.
+TypeScript: Superset of JavaScript that adds static typing.
+React Router: Library for routing in React applications.
+Axios: HTTP client for making API requests.
+React Context API: State management solution for React applications.
+Additional Notes
+Pagination and sorting functionality have been implemented for efficient handling of large datasets.
+Thorough form validation is provided for both adding and editing products, with clear error messages for the user.
+Ant Design components have been customized to align with the project's branding and styling requirements.
+The application is hosted on Netlify (https://master--product-managemnet-app.netlify.app/products).
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
