@@ -28,7 +28,7 @@ const ProductList = () => {
     useEffect(() => {
         const fetchProducts = () => {
             setLoading(true);
-            axios.get('http://localhost:5000/products')
+            axios.get('https://end-server.onrender.com/products')
                 .then(response => {
                     setProducts(response.data.products);
                     setLoading(false);
@@ -71,7 +71,7 @@ const ProductList = () => {
     };
 
     const handleConfirmDelete = () => {
-        axios.delete(`http://localhost:5000/products/${deletingProductId}`)
+        axios.delete(`https://end-server.onrender.com/products/${deletingProductId}`)
             .then(response => {
                 setProducts(products.filter(product => product.id !== deletingProductId));
                 setConfirmDeleteVisible(false);

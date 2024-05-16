@@ -11,7 +11,7 @@ const EditProductForm = ({ product, closeModal }) => {
   };
 
   const handleSubmit = () => {
-    axios.put(`http://localhost:5000/products/${editedProduct.id}`, editedProduct)
+    axios.put(`https://end-server.onrender.com/products/${editedProduct.id}`, editedProduct)
       .then(response => {
         // Update product in the frontend state
         message.success(response.message); // Display success message

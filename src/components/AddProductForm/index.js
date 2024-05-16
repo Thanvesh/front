@@ -25,7 +25,7 @@ const AddProductForm = () => {
   };
 
   const handleSubmit = () => {
-    axios.post(`http://localhost:5000/products`, newProduct)
+    axios.post(`https://end-server.onrender.com/products`, newProduct)
       .then(response => {
         setProducts(prevProducts => [...prevProducts, newProduct]);
         message.success(response.message) // Add new product to the product list
