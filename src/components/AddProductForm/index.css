@@ -1,0 +1,50 @@
+/* AddProductForm.css */
+
+/* Body background */
+
+/* Page container */
+.add-product-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+/* Form container */
+.add-product-form-container {
+  width: 80%; /* Adjust width for smaller screens */
+  max-width: 400px; /* Set maximum width */
+  padding: 40px;
+  background-color: #fff; /* White */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow */
+}
+
+/* Heading */
+.add-product-heading {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333; /* Dark gray */
+}
+
+/* Input fields */
+.ant-input {
+  width: 100%;
+  padding: 12px; /* Padding for input fields */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 4px; /* Border radius */
+  outline: none;
+  margin-bottom: 16px; /* Add margin between input fields */
+}
+
+/* Form label */
+.input-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Button */
+.add-product-button {
+  width: 100%;
+}

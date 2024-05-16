@@ -1,0 +1,286 @@
+/* General styles */
+.product-list-container {
+  padding: 20px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.main-heading {
+  color: #02051a;
+  text-align: center;
+  margin-bottom: 30px;
+
+  
+}
+
+
+
+.search-box .ant-input-search-button .anticon-search {
+  color: black; /* Set initial icon color to black */
+}
+
+.search-box .ant-input {
+  border-color: #020202; /* Normal border color */
+  box-shadow: none; /* Remove any default box shadow */
+}
+
+
+.category-filter-box .ant-select-selector {
+  color: black; /* Set initial text color to black */
+  border-color: #020202; /* Set initial border color to black */
+}
+
+.category-filter-box .ant-select-selection-item {
+  color: black; /* Set initial selected item text color to black */
+}
+
+.ant-table-pagination.ant-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+
+.search-box .ant-input:focus, 
+.search-box .ant-input-focused {
+  border-color: #40a9ff; /* Border color when focused */
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2); /* Optional: Add a focused box shadow */
+}
+
+/* Search and filter section */
+.search-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.filter-addButton {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-section .ant-select,
+.search-section .ant-input,
+.search-section .ant-btn {
+  margin-bottom: 8px;
+}
+
+/* Table styles */
+.ant-table {
+  color: #000000;
+  border-radius: 20px;
+  border: #000000 solid 2px;
+  width: 100%;
+  overflow-x: auto;
+  text-align: center; /* Center align text in table */
+}
+
+.ant-table-thead > tr > th {
+  background-color: #000000;
+  font-weight: 700 !important;
+  color: #ffffff;
+  border: #000000 solid 1px;
+  text-align: center !important; /* Center align text in table headers */
+}
+
+
+
+.ant-table-thead > tr > th > div.ant-table-filter-column {
+  justify-content: center !important; /* Override with center alignment */
+}
+.ant-table-thead > tr > th > div.ant-table-filter-column > span.ant-table-column-title {
+  flex: none !important; /* Override flex property */
+}
+
+.ant-table-thead > tr > th > div.ant-table-column-sorters {
+  justify-content: center !important; /* Override with center alignment */
+}
+
+
+.ant-table-tbody > tr > td {
+  color: #ffffff;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  text-align: center; /* Center align text in table cells */
+}
+
+.ant-table-tbody > tr {
+  height: 40px;
+}
+.ant-table-tbody > th {
+  background-color: #000000;
+ 
+}
+
+
+.ant-table-tbody > tr:hover > td {
+  color: #000000 !important;
+  font-weight: bold;
+}
+
+.ant-table-tbody > tr.category-clothes {
+  background-color: #a2707a; /* Light Blue */
+}
+
+.ant-table-tbody > tr.category-mobile {
+  background-color: #a37aa8; /* Beige */
+}
+
+.ant-table-tbody > tr.category-electronics {
+  background-color: #8299a4; /* Mint Cream */
+}
+
+.ant-table-tbody > tr.category-home-appliances {
+  background-color: #629f62; /* Honeydew */
+}
+
+.ant-table-tbody > tr.category-vehicles {
+  background-color: #ea985e; /* Seashell */
+}
+
+
+
+.search-section .add-product-icon {
+  display: none;
+}
+
+
+.category-addbutton{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1;
+}
+
+
+
+
+/* Responsive styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .ant-table-tbody > tr:hover > td {
+    color: #000000 !important;
+    font-weight: bold;
+  }
+
+  .ant-table-wrapper {
+    margin-top: 20px;
+  }
+
+  .search-section{
+    justify-content: space-between;
+  }
+  .category-addbutton{
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content:center;
+    align-items: flex-end;
+ 
+  }
+
+  .search-section .add-product-icon {
+    display: inline;
+  }
+  .add-section-con{
+    display: flex;
+    gap:5px ;
+  }
+
+
+
+}
+
+
+@media (min-width:360px) and (max-width: 768px) {
+  .btn-add{
+    display: none;
+  }
+  .search-section .add-product-icon {
+    display: inline;
+  }
+  .search-section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .category-addbutton{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+ 
+  }
+  .add-section-con{
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+ 
+}
+
+
+
+@media (max-width:360px) {
+  .btn-add{
+    display: none;
+  }
+  .search-section .add-product-icon {
+    display: inline;
+  }
+  .search-section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .category-addbutton{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+ 
+  }
+  .add-section-con{
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+.ant-btn-primary {
+  font-weight: 500; /* Set font-weight to 500 */
+  border-radius: 8px; /* Add border-radius */
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Add transition for smooth hover effect */
+}
+
+.ant-btn-danger {
+  font-weight: 500; /* Set font-weight to 500 */
+  background-color: rgb(18, 17, 17); /* Set background color to red */
+  color: #ffffff;
+  border-radius: 8px; /* Add border-radius */
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Add transition for smooth hover effect */
+}
+
+.ant-btn-primary:hover,
+.ant-btn-danger:hover {
+  background-color: transparent !important; /* Change background color on hover */
+  color: #0d0d0d; /* Change text color on hover */
+  
+}
+
+.ant-btn-primary:hover {
+  border-color: #1890ff; 
+  color: #000000 !important;/* Change border color on hover */
+}
+
+.ant-btn-danger:hover {
+  border-color: #bd38b2;
+  color: #070707; /* Change border color on hover */
+}

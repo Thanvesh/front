@@ -1,0 +1,115 @@
+.parallax {
+  background-image: url('../../Images/Default_snow_Falling_The_man_standing_on_Mountain_top_seeing_0.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.parallax-content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  width: 80%; /* For better responsiveness */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.falling-text {
+  font-size: 70px;
+  font-weight: 600;
+  color: black;
+  position: relative;
+  animation: fall 2s linear forwards; /* Apply the 'fall' animation */
+  margin-bottom: 20px; /* Space between welcome text and paragraph */
+}
+
+@keyframes fall {
+  from {
+    top: -100px; /* Start above the viewport */
+    opacity: 0; /* Start with opacity 0 */
+  }
+  to {
+    top: 0; /* End at the initial position */
+    opacity: 1; /* End with full opacity */
+  }
+}
+
+p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fcfcfe;
+  opacity: 0; /* Start with opacity 0 */
+  position: relative;
+  animation: slideIn 1s ease forwards;
+  animation-delay: 2s; /* Start after the "Welcome" animation */
+  background-color: #0e0e0e;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+@keyframes slideIn {
+  from {
+    left: -100%; /* Start from the left */
+    opacity: 0; /* Start with opacity 0 */
+  }
+  to {
+    left: 0; /* End at the center of the container */
+    opacity: 1; /* End with full opacity */
+  }
+}
+
+.btn {
+  background-color: #04fbbd;
+  padding: 10px 20px;
+  color: #0e0e0e;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+  opacity: 0; /* Start with opacity 0 */
+  position: relative;
+  animation: slideInButton 1s ease forwards;
+  animation-delay: 3s; /* Start after the paragraph animation */
+  margin-top: 20px; /* Space between paragraph and button */
+}
+
+@keyframes slideInButton {
+  from {
+    left: -100%; /* Start from the left */
+    opacity: 0; /* Start with opacity 0 */
+  }
+  to {
+    left: 0; /* End at the center of the container */
+    opacity: 1; /* End with full opacity */
+  }
+}
+
+.btn:hover {
+  background-color: #02caa1;
+}
+
+@media (max-width: 768px) {
+  .falling-text {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
